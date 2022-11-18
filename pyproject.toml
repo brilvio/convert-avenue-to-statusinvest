@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "convert-avenue-to-statusinvest"
+version = "0.1.0"
+description = "Convert avenue statements for importing on Status Invest"
+authors = ["Fernando Derkoski <brilvio@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "convert_avenue_to_statusinvest"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tabula-py = "^2.5.1"
+setuptools = "^65.5.1"
+pydantic = "^1.10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
